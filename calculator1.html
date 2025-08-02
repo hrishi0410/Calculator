@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator1.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <form>
+        <div class="display">
+          <input type="text" name="display" />
+        </div>
+        <div>
+          <input type="button" value="AC" onclick="clearDisplay()" class="operator" />
+          <input type="button" value="DE" onclick="deleteLast()" class="operator" />
+          <input type="button" value="." onclick="insert('.')" class="operator" />
+          <input type="button" value="/" onclick="insert('/')" class="operator" />
+        </div>
+        <div>
+          <input type="button" value="7" onclick="insert('7')" />
+          <input type="button" value="8" onclick="insert('8')" />
+          <input type="button" value="9" onclick="insert('9')" />
+          <input type="button" value="*" onclick="insert('*')" class="operator" />
+        </div>
+        <div>
+          <input type="button" value="4" onclick="insert('4')" />
+          <input type="button" value="5" onclick="insert('5')" />
+          <input type="button" value="6" onclick="insert('6')" />
+          <input type="button" value="-" onclick="insert('-')" class="operator" />
+        </div>
+        <div>
+          <input type="button" value="1" onclick="insert('1')" />
+          <input type="button" value="2" onclick="insert('2')" />
+          <input type="button" value="3" onclick="insert('3')" />
+          <input type="button" value="+" onclick="insert('+')" class="operator" />
+        </div>
+        <div>
+          <input type="button" value="00" onclick="insert('00')" />
+          <input type="button" value="0" onclick="insert('0')" />
+          <input type="button" value="=" onclick="calculate()" class="equal operator" />
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="calculator1.js"></script>
+</body>
+</html>
